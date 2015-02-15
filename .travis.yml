@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - secure: <YOUR_ENCRYPTED_DATA>
+  - secure: ClXsLRNsRkhXxY/X/NeMUBD/seD9bMc92Q4TPTbnmL/0C/qwYZhpeoJ+3ZnUxlwUb9HaDjnTmsUiv/gTSKVbobWsndroP0sw2IpFWHXBkpjIXP7/rHMMiZYlyQ6N3CKs8prYmFw8W3X9x/lCW/ot6WvsfaNTJilm2fGum09ZtJs=
 node_js:
 - '0.10'
 before_install:
@@ -9,6 +9,6 @@ before_install:
 script:
 - node ./node_modules/gulp/bin/gulp build --release
 after_success:
-- git config --global user.name = "Your Name"
-- git config --global user.email = "email@example.com"
+- git config --global user.name = "Konstantin Tarkus"
+- git config --global user.email = "hello@tarkus.me"
 - node ./node_modules/gulp/bin/gulp deploy --production

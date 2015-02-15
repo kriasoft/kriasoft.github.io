@@ -186,8 +186,8 @@ gulp.task('deploy', function () {
   return gulp.src('build/**/*')
     .pipe($.if('**/robots.txt', !argv.production ? $.replace('Disallow:', 'Disallow: /') : $.util.noop()))
     .pipe($.ghPages({
-      remoteUrl: 'https://' + process.env.GITHUB_TOKEN + '@github.com/{username}/{projectname}.git',
-      branch: 'gh-pages'
+      remoteUrl: 'https://' + process.env.GITHUB_TOKEN + '@github.com/kriasoft/kriasoft.github.io.git',
+      branch: 'master'
     }));
 });
 
