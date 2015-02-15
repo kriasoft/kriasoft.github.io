@@ -1,0 +1,357 @@
+/* FONT */
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@font-face {
+    font-family: 'lets_go_digital_regular';
+    src: url('../font/lets_go_digital_regular-webfont.eot');
+    src: url('../font/lets_go_digital_regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/lets_go_digital_regular-webfont.woff') format('woff'),
+        url('../font/lets_go_digital_regular-webfont.ttf') format('truetype'),
+        url('../font/lets_go_digital_regular-webfont.svg#lets_go_digitalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+.style-switcher {
+    background: #34495e;
+    position: fixed;
+    top: 40%;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 99;
+}
+#green {
+    color: #2ecc71;
+}
+#orange {
+    color: #f39c12;
+}
+#blue {
+    color: #3498db;
+}
+#turquoise {
+    color: #1abc9c;
+}
+#red {
+    color: #e74c3c;
+}
+
+/* ICOMOON ICON FONT */
+@font-face {
+    font-family: 'icomoon';
+    src:url('../font/icomoon.eot');
+    src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../font/icomoon.woff') format('woff'),
+        url('../font/icomoon.ttf') format('truetype'),
+        url('../font/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+}
+
+/* GENERIC STYLES */
+body {
+    padding: 0px; /* fix the padding issue for small screen sizes */
+    background: #1abc9c;
+}
+::selection {
+    background: #10856E;
+    color: #fff;
+}
+::-moz-selection {
+    background: #10856E;
+    color: #fff;
+}
+ul {
+    margin-bottom: 0px; /* Remove margin that bootstrap adds to ul */
+}
+ul.inline>li {
+    padding: 0px; /* Remove padding on the timers list items */
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    color: #ecf0f1;
+}
+.form-control { /* FORM ELEMENTS */
+    box-shadow: none;
+    border: none;
+    background: #ecf0f1;
+    line-height: 25px;
+    color: #16a085;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.input-group-addon {
+    background: #1abc9c;
+    border: none;
+    color: #16a085;
+}
+.form-group {
+    margin-top: 25px;
+}
+.btn { /* BUTTONS */
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+    border: none;
+    background: #34495e;
+    text-transform: uppercase;
+    color: #ecf0f1;
+}
+.btn:hover {
+    background: #34495e;
+    color: #16a085;
+}
+.btn:focus {
+    outline: none;
+}
+#signup-alert {
+    margin-top: 75px;
+    display: none;
+}
+#contact-alert {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+#signup-result, #contact-result {
+    font-size: 20px;
+    font-weight: 700;
+}
+.close {
+    line-height: inherit;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 50px;
+    background: #2c3e50;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.title-wrapper {
+    display: inline-block;
+    background: #34495e;
+    padding: 15px 25px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Center Screen */
+.wrapper {
+    text-align: center;
+    padding: 50px;
+}
+.title {
+    font-size: 100px;
+    line-height: 110px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.title-text {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+/* DIGITAL SCREEN */
+.screen {
+    display: inline-block;
+    background: #2c3e50;
+    padding: 35px;
+    border-radius: 25px;
+    border: 20px solid #ecf0f1;
+}
+.time span {
+    font-size: 80px;
+    line-height: 40px;
+    color: #1abc9c;
+    font-family: 'lets_go_digital_regular', sans-serif;
+}
+.time p {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #1abc9c;
+}
+.days, .timeRefDays {
+    margin-right: 75px;
+}
+
+/* EMAIL UPDATES */
+.email-updates {
+    margin-top: 50px;
+}
+.email-heading {
+    font-size: 25px;
+    line-height: 40px;
+}
+#email-address, #subscribe {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#email-address {
+    text-align: center;
+}
+#subscribe {
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+    padding-top: 25px;
+    border-radius: 0px;
+    margin: 0px;
+}
+    .about a {
+        color: #fff !important;
+    }
+#about1 {
+    background: #16a085;
+}
+#about2 {
+    text-align: center;
+    background: #1abc9c;
+}
+.about-heading {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+.about-main-text {
+    font-size: 25px;
+    line-height: 35px;
+}
+.about-item {
+    margin-top: 25px;
+}
+.about-icon {
+    font-size: 50px;
+    line-height: 50px;
+    background: #16a085;
+    color: #ecf0f1;
+    display: inline-block;
+    padding: 25px 27px;
+    border-radius: 100px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+.about-item:hover .about-icon {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.about-item-heading {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 15px 0px;
+}
+.about-item-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+    background: #16a085;
+}
+.contact-heading {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-size: 40px;
+    line-height: 50px;
+}
+.contact-heading small {
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+}
+.address {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2c3e50;
+    padding: 10px 0px;
+}
+.copyright {
+    float: left;
+    line-height: 30px;
+    color: #bdc3c7;
+}
+.social-icons {
+    float: right;
+}
+.social-icon {
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 5px;
+    color: #bdc3c7;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+.social-icon:hover {
+    color: #ecf0f1;
+}
+
+/* MEDIA */
+@media all and (max-width: 1000px) {
+    .copyright, .social-icons {
+        float: none;
+        text-align: center;
+    }
+    #contact-form {
+        margin-top: 50px;
+    }
+}
+@media all and (max-width: 730px) {
+    .time p {
+        text-align: center;
+    }
+    .days, .timeRefDays {
+        margin-right: 0px;
+    }
+    .time {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .list-inline> .colon {
+        display: none;
+    }
+    #email-address, #subscribe {
+        width: 100%;
+    }
+}

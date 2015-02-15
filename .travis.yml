@@ -4,6 +4,9 @@ env:
   - secure: ClXsLRNsRkhXxY/X/NeMUBD/seD9bMc92Q4TPTbnmL/0C/qwYZhpeoJ+3ZnUxlwUb9HaDjnTmsUiv/gTSKVbobWsndroP0sw2IpFWHXBkpjIXP7/rHMMiZYlyQ6N3CKs8prYmFw8W3X9x/lCW/ot6WvsfaNTJilm2fGum09ZtJs=
 node_js:
 - '0.10'
+branches:
+  except:
+    - master
 before_install:
 - npm uninstall psi browser-sync --save-dev
 script:
