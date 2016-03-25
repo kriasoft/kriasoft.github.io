@@ -4,6 +4,18 @@
   <meta charset="utf-8">
   <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (!String.prototype.startsWith) {
+      String.prototype.startsWith = function(searchString, position){
+        position = position || 0;
+        return this.substr(position, searchString.length) === searchString;
+      };
+    }
+    var path = '/react-routing';
+    if (window.location.pathname.startsWith(path)) {
+      window.location = 'https://www.kriasoft.com/universal-router' + window.location.pathname.substr(path.length);
+    }
+  </script>
   <style>
     * {
       line-height: 1.2;
