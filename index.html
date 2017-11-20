@@ -1,153 +1,410 @@
-<!doctype html>
-<html class="no-js" lang="">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Kriasoft: Web and Cloud Application Development</title>
-  <meta name="description" content="Custom software development company based in St. Petersburg, Russia and specializing in developing web and cloud applications.">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="&#64;kriasoft">
-  <meta name="twitter:creator" content="&#64;koistya">
-  <meta name="twitter:title" content="KriaSoft: Software Development">
-  <meta name="twitter:description" content="KriaSoft is a custom software development company based in St. Petersburg, Russia and specializing in developing web and cloud applications.">
-  <meta name="twitter:image" content="https://1.gravatar.com/avatar/f62c99fe292d1f20044b369093797997?s=120">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:700">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    a {
-      color: #4a4a4a;
-      -webkit-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      transition: all 500ms ease;
-      text-decoration: none;
-    }
-    a:hover, a:active {
-      color: #8ec62e;
-    }
-    .home {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      background-color: #f3f2f2;
-      background-image: url('bg.png');
-      background-position: 50% 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-    }
-    .content {
-      position: absolute;
-      left: 50%;
-      top: 45%;
-      right: 0;
-      bottom: 0;
-      display: block;
-      width: 800px;
-      height: 370px;
-      margin: -200px auto auto -400px;
-    }
-    .company {
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 700;
-      color: #8DC52D;
-      margin: 0 auto;
-      padding: 0;
-      font-size: 62px;
-      text-align: center;
-    }
-    .title {
-      margin-right: auto;
-      margin-left: auto;
-      font-family:'Source Sans Pro', sans-serif;
-      font-size: 62px;
-      line-height: 69px;
-      font-weight: 300;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    .desc {
-      margin-right: 5%;
-      margin-left: 5%;
-      border: 0 solid black;
-      font-family: 'Source Sans Pro', sans-serif;
-      color: #6e6e6e;
-      font-size: 21px;
-      line-height: 36px;
-      font-weight: 400;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    .follow, .contact {
-      font-family:'Source Sans Pro', sans-serif;
-      font-size: 1.125em;
-      margin-top: 2.5em;
-    }
-    .follow {
-      float: left;
-      margin-left: 4em;
-    }
-    .contact {
-      float: right;
-      margin-right: 4em;
-    }
-    .icon {
-      fill: #4a4a4a;
-      width: 48px;
-      height: 48px;
-      vertical-align: middle;
-      margin-right: 1em;
-      display: inline-block;
-      -webkit-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      transition: all 500ms ease;
-    }
-    a:hover .icon {
-      fill: #8ec62e;
-    }
-  </style>
-</head>
-<body>
-  <div class="home">
-    <p class="follow">
-      <a href="https://github.com/kriasoft">
-        <svg class="icon" width="256px" height="249px" viewBox="0 0 256 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet">
-          <g>
-            <g>
-              <g>
-                <path d="M127.505325,0 C57.0953085,0 0,57.0847512 0,127.505325 C0,183.840517 36.5341565,231.634955 87.1959231,248.494762 C93.5682331,249.675053 95.9077031,245.728782 95.9077031,242.361044 C95.9077031,239.320577 95.7894626,229.276482 95.7345652,218.622183 C60.2624607,226.335253 52.7774244,203.578209 52.7774244,203.578209 C46.9773127,188.840395 38.6202541,184.921571 38.6202541,184.921571 C27.0517027,177.007914 39.4922764,177.170494 39.4922764,177.170494 C52.2960173,178.069965 59.0378285,190.309953 59.0378285,190.309953 C70.4100164,209.802719 88.8660679,204.1673 96.1420723,200.909355 C97.28647,192.668426 100.590866,187.043563 104.237313,183.859519 C75.9166384,180.635358 46.1454077,169.702349 46.1454077,120.845859 C46.1454077,106.925169 51.1262821,95.5508706 59.282755,86.6216127 C57.9588852,83.4101203 53.5945496,70.4416878 60.5179443,52.8787733 C60.5179443,52.8787733 71.2250303,49.4519144 95.5909876,65.9485544 C105.76177,63.1234548 116.669441,61.706682 127.505325,61.6581191 C138.341208,61.706682 149.257326,63.1234548 159.44711,65.9485544 C183.783508,49.4519144 194.475813,52.8787733 194.475813,52.8787733 C201.4161,70.4416878 197.049653,83.4101203 195.725783,86.6216127 C203.901259,95.5508706 208.84835,106.925169 208.84835,120.845859 C208.84835,169.818478 179.020111,180.601576 150.627647,183.75817 C155.201015,187.715 159.276084,195.474522 159.276084,207.370346 C159.276084,224.43074 159.128284,238.1614 159.128284,242.361044 C159.128284,245.75412 161.423413,249.729951 167.886515,248.47787 C218.520833,231.59906 255.008538,183.821514 255.008538,127.505325 C255.008538,57.0847512 197.921676,0 127.505325,0"></path>
-                <path d="M47.7548904,181.634027 C47.4740694,182.267457 46.4774721,182.457486 45.5695553,182.022531 C44.6447467,181.606578 44.125334,180.743001 44.4251577,180.10746 C44.6996441,179.455026 45.6983528,179.273443 46.6210497,179.710509 C47.5479698,180.126462 48.0758284,180.998485 47.7548904,181.634027"></path>
-                <path d="M54.0267356,187.230311 C53.4186425,187.794064 52.2299047,187.532246 51.4233365,186.641221 C50.5893197,185.752307 50.4330737,184.563569 51.0496125,183.99137 C51.6767086,183.427616 52.8295522,183.691546 53.6656804,184.58046 C54.4996968,185.479931 54.6622774,186.660223 54.0267356,187.230311"></path>
-                <path d="M58.3294589,194.390565 C57.5482282,194.933204 56.2708102,194.424348 55.4811335,193.290508 C54.6999025,192.156667 54.6999025,190.796903 55.4980251,190.252153 C56.2898128,189.707403 57.5482282,190.197256 58.3484618,191.322651 C59.1275815,192.475494 59.1275815,193.835257 58.3294589,194.390565"></path>
-                <path d="M65.6062848,202.683151 C64.9074,203.453826 63.4188386,203.246905 62.329338,202.195411 C61.2145006,201.167141 60.9041197,199.70814 61.6051161,198.937466 C62.3124465,198.164681 63.8094538,198.382159 64.9074,199.425208 C66.0137919,200.451366 66.3516214,201.920924 65.6062848,202.683151"></path>
-                <path d="M75.0108761,205.482635 C74.7026069,206.481344 73.2689426,206.935302 71.824721,206.510904 C70.3826111,206.073837 69.4387998,204.904103 69.7301778,203.894837 C70.0300014,202.889794 71.4699999,202.416832 72.9247786,202.87079 C74.3647771,203.305746 75.3107001,204.467035 75.0108761,205.482635"></path>
-                <path d="M85.7136959,206.670103 C85.74959,207.721597 84.5249578,208.593619 83.0089478,208.612623 C81.4844919,208.646406 80.251414,207.795498 80.2345225,206.760895 C80.2345225,205.698843 81.4317059,204.835266 82.9561618,204.809929 C84.4721721,204.780369 85.7136959,205.624942 85.7136959,206.670103"></path>
-                <path d="M96.2280168,206.267066 C96.4096003,207.293224 95.3559942,208.346829 93.8505412,208.62765 C92.3704255,208.897913 91.0001042,208.264483 90.8121865,207.246772 C90.6284919,206.195277 91.7011007,205.141671 93.179105,204.869297 C94.6866694,204.607479 96.0358763,205.224017 96.2280168,206.267066"></path>
-              </g>
-            </g>
-          </g>
-        </svg>
-        Follow us on GitHub
-      </a>
-    </p>
-    <p class="contact"><span class="icon"></span>+7 (951) 663-35-53 &nbsp;|&nbsp; <a href="mailto:hello@kriasoft.com">hello@kriasoft.com</a></p>
-    <div class="content">
-      <h1 class="company">Kriasoft</h1>
-      <h2 class="title">We develop web apps for startups & leading brands</h2>
-      <p class="desc">At Kriasoft we specialize in web and cloud application development using modern technological stack and solving complex engineering problems.</p>
-    </div>
-  </div>
-  <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','UA-33821884-1','auto');ga('send','pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kriasoft</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+				  <img src="images/logo.png" alt="" />
+					<p>Коучинг. Веб-Архитектура. Open source проекты.</p>
+				</header>
+				<footer>
+					<a href="https://github.com/kriasoft" class="button scrolly">Криасофт на GitHub</a>
+				</footer>
+			</section>
+
+		<!-- First -->
+			<section id="first" class="main">
+				<header>
+					<div class="container">
+						<h2>О нас</h2>
+						<p>Криасофт, будучи основанной в 2009 году, в настоящее время является лидером в области коучинга и разработки
+							архитектуры изоморфных веб-приложений. За время работы компании созданы десятки open source проектов, подтверждающих ее первенство.</p>
+					</div>
+				</header>
+				<div class="content dark style1 featured">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(narrow)">
+								<section>
+									<span class="feature-icon"><span class="icon fa-cloud"></span></span>
+									<header>
+										<h3>Разработка <br/>веб-инфраструктуры для облачных приложений</h3>
+									</header>
+									<p>Появление разнообразных платформ заставило разработчиков искать новые пути совершенствания
+										создания облачных приложений. Не знаете с чего начать проект, напишите нам, мы разработаем
+										для Вас необходимую инфраструктуру веб-проекта.
+									</p>
+								</section>
+							</div>
+							<div class="4u 12u(narrow)">
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock-o"></span></span>
+									<header>
+										<h3>Коучинг в области изоморфных<br/>веб-приложений</h3>
+									</header>
+									<p>Разработка изоморфных веб-приложений требует особых знаний и навыков, нуждающихся в
+									постоянном совершенствовании в данной области. Не знаете, как решить возникшую задачу,
+								    обращайтесь в Криасофт, мы Вам поможем!</p>
+								</section>
+							</div>
+							<div class="4u 12u(narrow)">
+								<section>
+									<span class="feature-icon"><span class="icon fa-bolt"></span></span>
+									<header>
+										<h3>Создание <br/>open source <br/>проектов</h3>
+									</header>
+									<p>Нам не нужно делать себе рекламу! Наши open source проекты настолько популярны
+									и востребованы в сети, что уже только своим существованием вызывают интерес и привлекают
+									внимание к работе компании. </p>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<footer>
+									<a href="#second" class="button scrolly">Задать вопрос</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Second -->
+			<section id="second" class="main">
+				<header>
+					<div class="container">
+						<h2>Девиз Криасофт</h2>
+						<p>"Жизнь – это как полет на воздушном шаре. Чем больших высот вы хотите достичь, тем от большего количества
+							балласта вы должны избавиться. Нужно решиться выбросить за борт все то, что мешает вам подниматься ввысь." Рафаэлла Джордано</p>
+							<p>Минимум файлов - чистый код - прозрачная архитектура. Мы за простые решения сложных задач!</p>
+
+						</div>
+				</header>
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(narrow)">
+								<section>
+									<h3>Разработка и поддержка open source проектов</h3>
+									<p>Криасофт ежеднейно шагает в ногу со времинем, изучая новые техлогии и помогая
+										сторонним разработчикам в создании их собственных веб-проектов. На счету компании
+										десятки open source проектов, по праву заслуживщих особое внимание среди почитателей.
+									</p>
+									<p>Некоторые проекты настолько популярны, что уже несколько лет поддерживаются спонсорами,
+			                        готовыми и дальше продолжать сотрудничесиво на условиях win-win коммуникаций.</p>
+									<footer>
+										<a href="https://github.com/kriasoft" class="button scrolly">Криасофт на GitHub</a>
+									</footer>
+								</section>
+							</div>
+							<div class="8u 12u(narrow)">
+								<div class="row">
+									<div class="6u"><a href="https://github.com/kriasoft/react-starter-kit" class="image fit"><img src="images/pic01.jpg" alt="" /></a></div>
+									<div class="6u"><a href="https://github.com/kriasoft/nodejs-api-starter" class="image fit"><img src="images/pic02.jpg" alt="" /></a></div>
+									<div class="6u"><a href="https://github.com/kriasoft/isomorphic-style-loader#isomorphic-css-style-loader-for-webpack" class="image fit"><img src="images/pic03.jpg" alt="" /></a></div>
+									<div class="6u"><a href="https://github.com/kriasoft/universal-router" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+									<div class="6u"><a href="https://github.com/kriasoft/react-static-boilerplate" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+									<div class="6u"><a href="https://github.com/kriasoft/aspnet-starter-kit" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Third -->
+			<section id="third" class="main">
+				<header>
+					<div class="container">
+						<h2>Cила Криасофт - в знаниях и высокой квалификации персонала компании.</h2>
+						<p> Во внутренней деятельности мы акцентируем наше внимание на качественной производственной дисциплине и
+							современной корпоративной культуре, позволяющей добиваться высокой продуктивности в работе компании. </p>
+					</div>
+				</header>
+				<div class="content dark style3">
+					<div class="container">
+						<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>
+						<div class="row">
+							<div class="4u 12u(narrow)">
+
+								<h3>1. Гарантии качества</h3>
+								<p>Выбор компании-разработчика, безусловно, связан с риском. Но заказывая
+									разработку у нас, вы сможете оценить нашу работу без значительных рисков уже на первом этапе.
+									Сравнительно короткий и недорогой первый этап — «составление технического задания»
+									покажет наше отношение к делу и ответственность.
+								</p>
+								<p>И если по каким-либо причинам заказчика
+									не устроит наша компания, он сможет обратиться к другому исполнителю, уже имея на руках подробное ТЗ.</p>
+							</div>
+							<div class="4u 12u(narrow)">
+								<h3>2. Стоимость и сроки</h3>
+								<p>Корректно оценить стоимость и сроки разработки проекта можно только после анализа
+									поставленной задачи. Мы рассчитываем, сколько человеко-часов понадобится для разработки
+									проекта и умножаем цифру на стандартную почасовую ставку — 2000 р/час.</p>
+								<p>Грубую оценку мы сможем сообщить после получения первичной информации, а точную —
+									после написания технического задания. Обычно стоимость проекта стартует от 500 тыс. руб.
+
+										 </p>
+							</div>
+							<div class="4u 12u(narrow)">
+									<h3>3. Техническая поддержка</h3>
+								<p>Стабильная работа и развитие проекта не менее важны, чем его качественная
+									реализация. Мы готовы обеспечить техническую подержку как в рамках разовых работ,
+									так и в рамках долгосрочного договора на обслуживание и доработку веб-проекта.</p>
+								<p>Используем только надежные технологии.
+										Большинство проектов мы реализуем на технологии .Node.JS в связке с базами
+										данных Postgres.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Basic Elements -->
+		<!--
+			<section class="main">
+				<header>
+					<div class="container">
+						<h2>A Whole Lotta Elements</h2>
+						<p>General purpose elements for every general purpose. Or something like that.</p>
+					</div>
+				</header>
+				<div class="content style1 dark">
+					<div class="container">
+						<section>
+							<header>
+								<h3>Paragraph</h3>
+								<p>This is a byline</p>
+							</header>
+							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+							amet risus elit.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Blockquote</h3>
+							</header>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
+							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
+						</section>
+						<section>
+							<header>
+								<h3>Divider</h3>
+							</header>
+							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+							<hr />
+							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Unordered List</h3>
+							</header>
+							<ul class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ul>
+						</section>
+						<section>
+							<header>
+								<h3>Ordered List</h3>
+							</header>
+							<ol class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ol>
+						</section>
+						<section>
+							<header>
+								<h3>Table</h3>
+							</header>
+							<div class="table-wrapper">
+								<table class="default">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>00001</td>
+											<td>Lorem ipsum dolor</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00002</td>
+											<td>Sit amet nullam</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00003</td>
+											<td>Feugiat felis viverra</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00004</td>
+											<td>Sagittis enim felis</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00005</td>
+											<td>Nullam sed vestibulum</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section>
+							<header>
+								<h3>Form</h3>
+							</header>
+							<form method="post" action="#">
+								<div class="row 50%">
+									<div class="6u 12u(narrow)">
+										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
+									</div>
+									<div class="6u 12u(narrow)">
+										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<div class="select" tabindex="-1">
+											<select name="department" id="department">
+												<option value="">Choose a department</option>
+												<option value="1">Manufacturing</option>
+												<option value="2">Administration</option>
+												<option value="3">Support</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+									</div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" class="button" value="Send Message" /></li>
+											<li><input type="reset" class="button alt" value="Clear Form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
+
+		<!-- Fourth -->
+			<section id="fourth" class="main">
+				<header>
+					<div class="container">
+						<h2>Консультация по услугам</h2>
+						<p>Менеджеры Криасофт ответят на все интересующие Вас вопросы, ознакомят со стоимостью услуг и подготовят индивидуальное коммерческое предложение. Тел. +7 951 66 33 55 3, Санкт-Петербург</p>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container 75%">
+						<form method="post" action="#">
+							<div class="row 50%">
+								<div class="6u 12u(mobile)"><input type="text" placeholder="Представитесь, пожалуйста" /></div>
+								<div class="6u 12u(mobile)"><input type="text" placeholder="Ваш Email" /></div>
+							</div>
+							<div class="row 50%">
+								<div class="12u"><textarea name="message" placeholder="Текст сообщения"></textarea></div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" class="button" value="Отправить" /></li>
+										<li><input type="reset" class="button alt" value="Очистить" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/kriasoft" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://ru-ru.facebook.com/kriasoft/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://github.com/kriasoft" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Криасофт. Все права защищены.</li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+      <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-33821884-1','auto');ga('send','pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	</body>
 </html>
